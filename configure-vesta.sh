@@ -19,6 +19,6 @@ ln -s "$NEWCRT" "$CRT"
 chown "$CRTOWN:$CRTGRP" "$CRT"
 chmod "$CRTMSK" "$CRT"
 
-ln -s "$NEWKEY" $(basename "$KEY")
+ln -s "$NEWKEY" "$KEY"
 chown "$KEYOWN:$KEYGRP" "$KEY"
 chmod "$KEYMSK" "$KEY"
