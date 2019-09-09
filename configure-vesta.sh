@@ -2,8 +2,8 @@
 CRT="/usr/local/vesta/ssl/certificate.crt"
 KEY="/usr/local/vesta/ssl/certificate.key"
 
-NEWCRT="/etc/letsencrypt/live/mail.taupeserver.nl/fullchain.pem"
-NEWKEY="/etc/letsencrypt/live/mail.taupeserver.nl/privkey.pem"
+NEWCRT="/etc/letsencrypt/live/$1/fullchain.pem"
+NEWKEY="/etc/letsencrypt/live/$1/privkey.pem"
 
 CRTMSK="0$(stat -c "%a" "$CRT")"
 CRTOWN=$(stat -c "%U" "$CRT")
